@@ -1,0 +1,16 @@
+{
+   "author":"Krzysztof Zajączkowski",
+   "classifications":[
+      "Common",
+      "Console"
+   ],
+   "name":"Windows Service Worker",
+   "identity":"WindowsServiceWorker",
+   "shortName":"windows-service",
+   "tags":{
+      "language":"C#",
+      "type":"project"
+   },
+   "sourceName":"WindowsServiceWorker",
+   "preferNameDirectory":"true"
+}
