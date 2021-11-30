@@ -1,6 +1,7 @@
 {
   "Custom": {
     "SecondsDelay": 5,
-    "RepeatTimes": 3 
+    "RepeatTimes": 3,
+    "StopAfterSeconds": 30
   }
 }
