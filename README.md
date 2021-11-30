@@ -7,7 +7,7 @@
 
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Development](#development)
+  * [How to use templates](#how-to-use-templates)
 
 ## Getting Started
 These instructions will help you understand how to use .NET project templates.
