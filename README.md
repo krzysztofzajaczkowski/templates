@@ -28,9 +28,9 @@ dotnet new -i templates/windows-service-worker/WindowsServiceWorker
 ```
 You should see something like this, *windows-service* is a template name that you want to use when creating new project
 ```
-Templates 				  Short Name 	   Language  Tags
+Templates                 Short Name       Language  Tags
 ------------------------  ---------------  --------  --------------
-Windows Service Template  windows-service  [C#] 	 Common/Console
+Windows Service Template  windows-service  [C#]      Common/Console
 ```
 Create new project using installed template and custom solution/project name
 ```
