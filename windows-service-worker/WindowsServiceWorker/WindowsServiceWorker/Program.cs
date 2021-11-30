@@ -1,9 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using WindowsServiceWorker.Configuration;
 
 namespace WindowsServiceWorker
 {
@@ -16,8 +14,12 @@ namespace WindowsServiceWorker
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration(builder => 
+                    builder.AddJsonFile("custom-config.json", false))
                 .ConfigureServices((hostContext, services) =>
                 {
+                    services.Configure<ApplicationOptions>(hostContext.Configuration.GetSection("Application"));
+                    services.Configure<CustomOptions>(hostContext.Configuration.GetSection("Custom"));
                     services.AddHostedService<Worker>();
                 });
     }
